@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <span style="font-size:20px">Кого ищем:</span>
+        <input type="text" name="full_name">
+        <button type="dsfsd"> Найти </button>
+    </form>
+    {% if shalom %}
+        <p></p>
+        {% for v in shalom %}
+        <p>{{ v }}</p>
+        {% endfor %}
+    {% endif %}
+{% endblock%}
